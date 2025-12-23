@@ -6,7 +6,7 @@ import { Navbar } from "./components/Navbar";
 export default function Home() {
   return (
     
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen text-white bg-gray-950">
       <div 
       className="relative z-30 rounded-2xl overflow-hidden"
         style={{
