@@ -114,11 +114,7 @@ export default function Page() {
           <Option icon={<Lock size={18} />} title="Automatically apply watermark" />
           <Option icon={<Search size={18} />} title="Generate SEO metadata" />
           <Option icon={<ImageIcon size={18} />} title="Create SEO thumbnails" />
-          <Option
-            icon={<Settings size={18} />}
-            title="Auto-categorize (Beta)"
-            disabled
-          />
+          
         </div>
 
         
