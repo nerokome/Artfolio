@@ -99,13 +99,17 @@ const Signup = () => {
                     Login
                   </Link>
                 </p>
-
-                <button
-                  type="submit"
-                  className="mt-6 w-1/2 mx-auto py-3 rounded-2xl border-2 border-cyan-400/60 text-white font-medium hover:bg-cyan-400/10 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all duration-300"
-                >
-                  Sign Up
-                </button>
+<Link href="/dashboard">
+  <button
+    type="button"
+    className="mt-6 w-1/2 mx-auto py-3 rounded-2xl border-2 border-cyan-400/60 text-white font-medium
+               hover:bg-cyan-400/10 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)]
+               transition-all duration-300"
+  >
+    Sign Up
+  </button>
+</Link>
+  
               </form>
 
             </div>
