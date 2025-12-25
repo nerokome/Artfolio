@@ -2,8 +2,8 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div>
-      Analytics page
+    <div className='bg-neutral-900 min-h-screen'>
+      analytics
     </div>
   )
 }

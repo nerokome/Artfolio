@@ -10,8 +10,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="bg-neutral-100">
+    
+      <body className="bg-neutral-900">
         <div className="flex h-screen overflow-hidden">
           <Sidebar/>
           <div className="flex flex-col flex-1">
@@ -23,6 +23,6 @@ export default function RootLayout({
           </div>
         </div>
       </body>
-    </html>
+    
   )
 }

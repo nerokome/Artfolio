@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Page = () => {
+const page = () => {
   return (
     <div className='bg-neutral-900  min-h-screen'>
-      portfolio
+      settings 
     </div>
   )
 }
 
-export default Page
+export default page

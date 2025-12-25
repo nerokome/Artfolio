@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <header className="h-16 bg-white border-b flex items-center justify-between px-6">
+    <header className="h-25 bg-neutral-900 border-b flex items-center justify-between px-6">
       <div className="text-sm text-neutral-500">
         Welcome, Nero
       </div>
