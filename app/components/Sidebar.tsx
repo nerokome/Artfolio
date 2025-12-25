@@ -11,6 +11,7 @@ import {
 } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function Sidebar() {
   const pathname = usePathname()
@@ -26,9 +27,15 @@ export default function Sidebar() {
       ${collapsed ? 'w-20' : 'w-64'}`}
     >
       
-      <div className="flex items-center justify-between px-4 py-4">
+      <div className="flex items-center justify-between px-4 py-4 mt-2">
         {!collapsed && (
-          <span className="text-xl font-semibold">Artfolio</span>
+           <Image
+                    src="/rarrr.png"
+                    alt="Artfolio Logo"
+                    width={150}
+                    height={150}
+                    priority
+                  />
         )}
 
         <button
@@ -38,10 +45,8 @@ export default function Sidebar() {
           {collapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
         </button>
       </div>
-
-      {/* NAV */}
       <nav className="flex-1 px-2">
-        <ul className="space-y-15 mt-8">
+        <ul className="space-y-10 mt-8">
           <SidebarItem
             href="/dashboard/portfolio"
             icon={<LayoutDashboard size={22} />}
@@ -98,7 +103,7 @@ function SidebarItem({
     <li>
       <Link
         href={href}
-        className={`flex items-center gap-20 px-3 py-2 rounded-lg
+        className={`flex items-center gap-5 px-3 py-2 rounded-lg
         transition-colors
         ${active ? 'bg-neutral-800' : 'hover:bg-neutral-800'}
         ${collapsed ? 'justify-center' : ''}`}
