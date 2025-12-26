@@ -64,10 +64,10 @@ export default function Sidebar() {
                 collapsed={false}
               />
               <SidebarItem
-                href="/dashboard/analytics"
+                href="/dashboard/analyticsdash"
                 icon={<BarChart size={22} />}
                 label="Analytics"
-                active={isActive('/dashboard/analytics')}
+                active={isActive('/dashboard/analyticsdash')}
                 collapsed={false}
               />
               <SidebarItem
