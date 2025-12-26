@@ -109,10 +109,10 @@ export default function Sidebar() {
         <nav className="flex-1 px-2">
           <ul className="space-y-10 mt-8">
             <SidebarItem
-              href="/dashboard/portfolio"
+              href="/dashboard"
               icon={<LayoutDashboard size={22} />}
               label="Portfolio"
-              active={isActive('/dashboard/portfolio')}
+              active={isActive('/dashboard')}
               collapsed={collapsed}
             />
             <SidebarItem
