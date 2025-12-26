@@ -1,14 +1,4 @@
-import React from 'react'
-
-const page = () => {
-  return (
-    <div>
-      analytics dash page
-    </div>
-  )
-}
-export default page
-/*use client';
+'*use client';
 import React from 'react';
 import {
   Chart as ChartJS,
@@ -137,4 +127,3 @@ function DonutStat({ label, value }: { label: string; value: number }) {
     </div>
   );
 }
-*/
