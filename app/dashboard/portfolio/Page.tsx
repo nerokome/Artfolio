@@ -16,16 +16,8 @@ const Page = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const artworks: Artwork[] = [
-    { id: 1, title: 'Vibrant Sunset Over Mountains', imageUrl: '/art.jpg', views: 245, likes: 42, favorites: 42 },
-    { id: 2, title: 'Serene Ocean Cliff at Dusk', imageUrl: '/fotos.jpg', views: 189, likes: 31, favorites: 31 },
-    { id: 1, title: 'Vibrant Sunset Over Mountains', imageUrl: '/art.jpg', views: 245, likes: 42, favorites: 42 },
-    { id: 2, title: 'Serene Ocean Cliff at Dusk', imageUrl: '/fotos.jpg', views: 189, likes: 31, favorites: 31 },
-    { id: 1, title: 'Vibrant Sunset Over Mountains', imageUrl: '/art.jpg', views: 245, likes: 42, favorites: 42 },
-    { id: 2, title: 'Serene Ocean Cliff at Dusk', imageUrl: '/fotos.jpg', views: 189, likes: 31, favorites: 31 },
-    { id: 1, title: 'Vibrant Sunset Over Mountains', imageUrl: '/art.jpg', views: 245, likes: 42, favorites: 42 },
-    { id: 2, title: 'Serene Ocean Cliff at Dusk', imageUrl: '/fotos.jpg', views: 189, likes: 31, favorites: 31 },
-    { id: 1, title: 'Vibrant Sunset Over Mountains', imageUrl: '/art.jpg', views: 245, likes: 42, favorites: 42 },
-    { id: 2, title: 'Serene Ocean Cliff at Dusk', imageUrl: '/fotos.jpg', views: 189, likes: 31, favorites: 31 },
+    { id: 1, title: 'Vibrant Sunset Over Mountains', imageUrl: '/public/art.jpg', views: 245, likes: 42, favorites: 42 },
+    { id: 2, title: 'Serene Ocean Cliff at Dusk', imageUrl: '/public/fotos.jpg', views: 189, likes: 31, favorites: 31 },
     
     
   ]
