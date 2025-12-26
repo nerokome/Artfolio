@@ -1,5 +1,4 @@
 'use client'
-export const dynamic = 'force-dynamic';
 import { Star, Heart, Eye, ArrowLeft } from 'lucide-react'
 import React, { useState } from 'react'
 import Image from 'next/image'
