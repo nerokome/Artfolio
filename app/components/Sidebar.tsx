@@ -50,17 +50,17 @@ export default function Sidebar() {
           <nav>
             <ul className="space-y-6">
               <SidebarItem
-                href="/dashboard/portfolio"
+                href="/dashboard"
                 icon={<LayoutDashboard size={22} />}
                 label="Portfolio"
-                active={isActive('/dashboard/portfolio')}
+                active={isActive('/dashboard')}
                 collapsed={false}
               />
               <SidebarItem
-                href="/dashboard/upload"
+                href="/dashboard/uploaddocs"
                 icon={<Upload size={22} />}
-                label="Upload"
-                active={isActive('/dashboard/upload')}
+                label="Upload Docs"
+                active={isActive('/dashboard/uploaddocs')}
                 collapsed={false}
               />
               <SidebarItem
@@ -116,10 +116,10 @@ export default function Sidebar() {
               collapsed={collapsed}
             />
             <SidebarItem
-              href="/dashboard/upload"
+              href="/dashboard/uploaddocs"
               icon={<Upload size={22} />}
-              label="Upload"
-              active={isActive('/dashboard/upload')}
+              label="Upload Docs"
+              active={isActive('/dashboard/uploaddocs')}
               collapsed={collapsed}
             />
             <SidebarItem
