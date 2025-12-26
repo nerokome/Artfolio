@@ -59,9 +59,14 @@ export default function Page() {
   }
 
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 ">
-
-      
+    <div>
+      <div>
+        <h1 className="text-3xl text-zinc-200 font-bold mb-6">Upload Your Artwork</h1>
+        <p className="text-zinc-300 mb-8">
+          Easily upload and manage your digital art files.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 ">
       <div className="xl:col-span-2 bg-neutral-900 rounded-xl p-6 shadow-lg ">
         <h2 className="text-white text-lg font-semibold mb-4">
           Upload Your Creations
@@ -134,6 +139,8 @@ export default function Page() {
         )}
       </div>
     </div>
+    </div>
+    
   )
 }
 
@@ -146,10 +153,13 @@ function Option({
   title: string
   disabled?: boolean
 }) {
+  const [enabled, setEnabled] = useState(false)
+
   return (
     <div
       className={`flex items-center justify-between p-3 rounded-lg mb-3
-      ${disabled ? 'opacity-50' : 'hover:bg-neutral-800'} transition`}
+      ${disabled ? 'opacity-50' : 'hover:bg-neutral-800'} transition cursor-pointer`}
+      onClick={() => setEnabled(!enabled)}
     >
       <div className="flex items-center gap-3 text-neutral-300">
         {icon}
@@ -157,10 +167,13 @@ function Option({
       </div>
 
       <div
-        className={`w-10 h-5 rounded-full relative
-        ${disabled ? 'bg-neutral-700' : 'bg-cyan-400'}`}
+        className={`w-10 h-5 rounded-full relative transition-colors
+        ${enabled ? 'bg-cyan-400' : 'bg-neutral-700'}`}
       >
-        <div className="absolute right-1 top-1 w-3 h-3 bg-black rounded-full" />
+        <div
+          className={`absolute w-3 h-3 bg-black rounded-full transition-all
+          ${enabled ? 'right-1' : 'left-1'} top-1`}
+        />
       </div>
     </div>
   )

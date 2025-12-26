@@ -99,7 +99,7 @@ const Signup = () => {
                     Login
                   </Link>
                 </p>
-<Link href="/dashboard">
+<Link href="/dashboard/portfolio">
   <button
     type="button"
     className="mt-6 w-1/2 mx-auto py-3 rounded-2xl border-2 border-cyan-400/60 text-white font-medium
