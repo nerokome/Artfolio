@@ -14,7 +14,7 @@ import {
 } from 'chart.js';
 import { Line, Doughnut } from 'react-chartjs-2';
 
-// Register chart components
+
 ChartJS.register(
   CategoryScale,
   LinearScale,

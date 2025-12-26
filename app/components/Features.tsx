@@ -39,7 +39,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="mx-auto mt-20 max-w-6xl px-6">
+    <section className="mx-auto mt-20 max-w-6xl ">
       {/* Section Heading */}
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -60,7 +60,7 @@ const Features = () => {
             <div className="flex items-center justify-center text-3xl mb-4">
               {f.icon}
             </div>
-            <h3 className="font-semibold text-lg text-white">{f.title}</h3>
+            <h3 className="font-semibold text-sm sm:text-lg text-white">{f.title}</h3>
             <p className="mt-2 text-sm text-gray-300">{f.description}</p>
           </div>
         ))}
