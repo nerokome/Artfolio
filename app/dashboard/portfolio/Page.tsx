@@ -1,4 +1,5 @@
 'use client'
+export const dynamic = 'force-dynamic';
 import { Star, Heart, Eye, ArrowLeft } from 'lucide-react'
 import React, { useState } from 'react'
 import Image from 'next/image'
@@ -26,8 +27,7 @@ const Page = () => {
     { id: 2, title: 'Serene Ocean Cliff at Dusk', imageUrl: '/fotos.jpg', views: 189, likes: 31, favorites: 31 },
     { id: 1, title: 'Vibrant Sunset Over Mountains', imageUrl: '/art.jpg', views: 245, likes: 42, favorites: 42 },
     { id: 2, title: 'Serene Ocean Cliff at Dusk', imageUrl: '/fotos.jpg', views: 189, likes: 31, favorites: 31 },
-    { id: 1, title: 'Vibrant Sunset Over Mountains', imageUrl: '/art.jpg', views: 245, likes: 42, favorites: 42 },
-    { id: 2, title: 'Serene Ocean Cliff at Dusk', imageUrl: '/fotos.jpg', views: 189, likes: 31, favorites: 31 },
+    
     
   ]
 
@@ -95,6 +95,8 @@ const Page = () => {
             src={selectedImage}
             alt="Full artwork"
             className="max-h-[85%] max-w-[90%] rounded-lg shadow-lg border border-neutral-600"
+            width={800}
+            height={800}
           />
           <div className="mt-4 text-neutral-300 text-sm">
             Click <span className="font-semibold">Back</span> to return to gallery
