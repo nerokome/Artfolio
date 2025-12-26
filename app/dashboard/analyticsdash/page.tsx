@@ -50,10 +50,10 @@ export default function Page() {
           backgroundPosition: 'center',
         }}
       >
-        {/* Controlled overlay */}
+        
         <div className="absolute inset-0 bg-black/90 sm:bg-black/90" />
 
-        {/* Content */}
+      
         <div className="relative z-10 p-6 sm:p-10">
           <div className="mb-8">
             <h1 className="text-3xl font-bold mb-4">Analytics Dashboard</h1>
@@ -63,7 +63,7 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            {/* Main charts */}
+          
             <div className="lg:col-span-8 space-y-6">
               <div className="bg-black/60 backdrop-blur-md p-6 rounded-2xl border border-white/5">
                 <h2 className="text-xl font-medium mb-6">
@@ -86,7 +86,7 @@ export default function Page() {
               </div>
             </div>
 
-            {/* Sidebar */}
+            
             <div className="lg:col-span-4 bg-black/60 backdrop-blur-md p-6 rounded-2xl border border-white/5">
               <h2 className="text-xl font-medium mb-6">
                 Most Viewed Pieces

@@ -33,7 +33,7 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-black text-white p-6">
-      {/* Background section */}
+      
       <div
         className="relative rounded-2xl overflow-hidden"
         style={{
@@ -42,12 +42,12 @@ const Dashboard = () => {
           backgroundPosition: 'center',
         }}
       >
-        {/* Dark overlay */}
+        
         <div className="absolute inset-0 bg-black/90 sm:bg-black/90" />
 
-        {/* Content */}
+      
         <div className="relative z-10">
-          {/* Header */}
+        
           <div className="flex flex-col items-center text-center py-12 px-4">
             <h1 className="text-4xl font-extrabold tracking-tight mb-4">
               My Collection
@@ -57,7 +57,7 @@ const Dashboard = () => {
             </p>
           </div>
 
-          {/* Grid */}
+          
           <div className="px-6 pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {artworks.map((art) => (
               <div
@@ -98,7 +98,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Image modal */}
+      
       {selectedImage && (
         <div className="fixed inset-0 bg-black/90 flex flex-col items-center justify-center z-50">
           <div className="absolute top-4 left-4">

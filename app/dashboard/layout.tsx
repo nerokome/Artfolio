@@ -23,7 +23,7 @@ export default function RootLayout({
             <Header />
           </div>
 
-          <main className="flex-1 overflow-y-auto p-1 bg-cyan-400 border-x border-cyan-600">
+          <main className="flex-1 overflow-y-auto ">
   {children}
 </main>
 
