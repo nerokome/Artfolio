@@ -25,7 +25,7 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Mobile top nav */}
+      
       <nav className="md:hidden bg-neutral-900 text-neutral-200 flex items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/rarrr.png" alt="Artfolio Logo" width={40} height={40} />
@@ -39,7 +39,6 @@ export default function Sidebar() {
         </button>
       </nav>
 
-      {/* Mobile drawer without background overlay */}
       {mobileOpen && (
         <aside className="absolute left-0 top-0 h-full w-64 bg-neutral-900 text-neutral-200 flex flex-col p-4 md:hidden z-50">
           <button
@@ -83,7 +82,7 @@ export default function Sidebar() {
         </aside>
       )}
 
-      {/* Desktop sidebar */}
+      
       <aside
         className={`hidden md:flex h-screen bg-neutral-900 text-neutral-200 flex-col transition-all duration-300
         ${collapsed ? 'w-20' : 'w-64'}`}

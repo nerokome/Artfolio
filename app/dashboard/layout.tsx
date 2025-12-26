@@ -9,18 +9,16 @@ export default function RootLayout({
   return (
     <body className="bg-neutral-900">
       <div className="flex h-screen overflow-hidden">
-        {/* Desktop sidebar */}
         <div className="hidden md:block">
           <Sidebar />
         </div>
 
         <div className="flex flex-col flex-1">
-          {/* Mobile: show Sidebar as top header */}
+      
           <div className="md:hidden">
             <Sidebar />
           </div>
 
-          {/* Desktop: show Header */}
           <div className="hidden md:block">
             <Header />
           </div>

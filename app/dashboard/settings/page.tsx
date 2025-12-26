@@ -15,7 +15,7 @@ const page = () => {
   return (
     <div className='bg-neutral-700  min-h-screen'>
     <div className="min-h-screen  flex items-center justify-center p-6 antialiased font-sans">
-      {/* Glassmorphism Container */}
+     
       <div className="w-full  bg-[#1a1a1a]/90 backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative">
         
         <header className="mb-10">
@@ -24,7 +24,7 @@ const page = () => {
         </header>
 
         <div className="space-y-8">
-          {/* PORTFOLIO URL SECTION */}
+         
           <div className="bg-[#22d3ee]/5 border border-[#22d3ee]/20 rounded-3xl p-6">
             <div className="flex items-center gap-2 mb-4 text-[#22d3ee]">
               <Globe size={18} />
@@ -47,7 +47,6 @@ const page = () => {
             </p>
           </div>
 
-          {/* PROFILE INFORMATION */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-xs font-bold text-zinc-500 uppercase tracking-widest ml-1">Display Name</label>
@@ -89,7 +88,6 @@ const page = () => {
             </div>
           </div>
 
-          {/* FOOTER ACTIONS */}
           <div className="pt-4 flex items-center justify-between">
             <button className="flex items-center gap-2 text-zinc-500 hover:text-white text-sm font-medium transition-colors">
               <Share2 size={16} />
